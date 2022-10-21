@@ -6,8 +6,6 @@ require("dotenv").config();
 
 const connectionString =
   process.env.MONGODB_URI || process.env.DB_URI;
-  // process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/studentsDB';
-  // 'mongodb+srv://callasteven:4184Longview@cluster0.x8hemhd.mongodb.net/studentsDB?retryWrites=true&w=majority'
 
 connect(connectionString, {
   useNewUrlParser: true,
